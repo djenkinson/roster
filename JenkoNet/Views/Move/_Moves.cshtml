@@ -1,0 +1,35 @@
+﻿<!-- ko with: moves -->
+<div class="movesPanel">
+    <div class="movesPanelList">
+        <div class="movesPanelList__Title">Basic Moves</div>
+        <div id="moves" class="movesPanelList__List" data-bind="foreach: $data.moveList">
+            <div class="movesPanelList__move" data-bind="text: Name, click: $parent.selectMove, class: Label"></div>
+        </div>
+    </div>
+    <div class="selectedMove" data-bind="with: $data.selectedMove">
+        <div class="selectedMove__Move">
+            <h3 class="selectedMove__title" data-bind="text: $data.Name"></h3>
+            <div data-bind="if: Condition().length > 0">
+                <span>Condition: </span>
+                <span style="font-weight:500;color:red;" data-bind="text: Condition"></span>
+            </div>
+            <div data-bind="foreach: $data.HtmlText">
+                <!-- ko if: Type() == 'text' -->
+                <p data-bind="html: Item"></p>
+                <!-- /ko -->
+                <!-- ko if: Type() == 'list' -->
+                <ul data-bind="foreach: Item">
+                    <li data-bind="text: $data"></li>
+                </ul>
+                <!-- /ko -->
+            </div>
+        </div>
+    </div>
+    <!-- ko ifnot: $data.selectedMove-->    
+        <div style="text-align:center;align-items:center;" class="selectedMove__Move">
+            <div>Select a move to begin</div>
+        </div>
+    <!-- /ko -->
+</div>
+
+<!-- /ko -->

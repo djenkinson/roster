@@ -1,0 +1,102 @@
+[
+	{
+			"Name": "Directly Engage a Threat",
+			"Type": "Basic",
+			"Text": "When you <strong>directly engage a threat</strong>, roll +Danger. On a hit, trade blows. On a 10+, pick two. On a 7-9, pick one. [list]",
+			"Items" :["resist or avoid their blows", 
+					 "take something from them", 
+					 "create an opportunity for your allies", 
+					 "impress, surprise, or frighten the opposition" ],
+			"Items2": [],
+			"Label": "Danger",
+			"Condition": "Afraid"
+	},
+	{
+			"Name": "Unleash Your Powers",
+			"Type": "Basic",
+			"Text": "When you <strong>unleash your powers</strong> to overcome an obstacle, reshape your environment, or extend your senses, roll +Freak. On a hit, you do it. On a 7-9, mark a condition or the GM will tell you how the effect is unstable or temporary.",
+			"Items": [],
+			"Items2": [],
+			"Label": "Freak",
+			"Condition": "Hopeless"
+	},
+	{
+			"Name": "Comfort of Support",
+			"Type": "Basic",
+			"Text": "When you <strong>comfort or support</strong> someone, roll +Mundane. On a hit, they hear you: they mark potential, clear a condition, or shift Labels if they open up to you. On a 10+, you can also add a Team to the pool or clear a condition yourself.",
+			"Items": [],
+			"Items2": [],
+			"Label": "Mundane",
+			"Condition": "Angry"
+	},
+	{
+			"Name": "Pierce the Mask",
+			"Type": "Basic",
+			"Text": "When you <strong>pierce someone’s mask</strong> to see the person beneath, roll +Mundane. On a 10+, ask three. On a 7-9, ask one. [list]",
+			"Items" :["what are you really planning?", 
+					 "what do you want me to do?", 
+					 "what do you intend to do?", 
+					 "how could I get your character to ___?",
+					 "how could I gain Influence over you?"],
+			"Items2": [],
+			"Label": "Mundane",
+			"Condition": "Afraid"
+	},
+	{
+			"Name": "Defend",
+			"Type": "Basic",
+			"Text": "When you <strong>defend someone or something</strong> from an immediate threat, roll +Savior. For NPC threats: on a hit, you keep them safe and choose one. On a 7-9, it costs you: expose yourself to danger or escalate the situation. [list] For PC threats: on a hit, give them -2 to their roll. On a 7-9, you expose yourself to cost, retribution, or judgment.",
+			"Items": ["add a Team to the pool",
+					  "take Influence over someone you protect",
+					  "clear a condition"],
+			"Items2": [],
+			"Label": "Savior",
+			"Condition": "Insecure"
+	},
+	{
+			"Name": "Assess the Situation",
+			"Type": "Basic",
+			"Text": "When you <strong>assess the situation</strong>, roll +Superior. On a 10+, ask two. On a 7-9, ask one. Take +1 while acting on the answers. [list]",
+			"Items" :["what here can I use to ________?", 
+					 "what here is the biggest threat?", 
+					 "what here is in the greatest danger?", 
+					 "who here is most vulnerable to me?",
+					 "how could we best end this quickly?"],
+			"Items2": [],
+			"Label": "Superior",
+			"Condition": "Guilty"
+	},
+  {
+    "Name": "Provoke Someone",
+    "Type": "Basic",
+    "Text": "When you <strong>provoke someone</strong> susceptible to your words, say what you’re trying to get them to do and roll +Superior. For NPCs: on a 10+, they rise to the bait and do what you want. On a 7-9, they can instead choose one. [list] For PCs: On a 10+, both. On a 7-9, choose one. [list]",
+    "Items": [
+      "they stumble: you take +1 forward against them",
+      "they err: you gain a critical opportunity",
+      "they overreact: you gain Influence over them"
+    ],
+    "Items2": [
+      "if they do it, add a Team to the pool",
+      "if they don’t do it, they mark a condition"
+    ],
+    "Label": "Superior",
+    "Condition": "Guilty"
+  },
+  {
+    "Name": "Take a Powerful Blow",
+    "Type": "Basic",
+    "Text": "When you <strong>take a powerful blow</strong>, roll +conditions marked. On a 10+, choose one.[list] On a 7-9, choose one.[list] On a miss, you stand strong. Mark potential as normal, and say how you weather the blow.",
+    "Items": [
+      "they stumble: you take +1 forward against them",
+      "they err: you gain a critical opportunity",
+      "they overreact: you gain Influence over them"
+    ],
+    "Items2": [
+      "you lash out verbally: provoke a teammate to foolhardy action or take advantage of your Influence to inflict a condition",
+      "you give ground; your opposition gets an opportunity",
+      "you struggle past the pain; mark two conditions"
+    ],
+    "Label": "conditions",
+    "Condition": ""
+  }	
+]

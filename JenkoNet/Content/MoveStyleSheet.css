@@ -1,0 +1,107 @@
+﻿body {
+    background-color: #4A7284;
+}
+
+.roster-content  {
+    height: 100%;
+    width: 100%;
+    background: #4A7284;
+    margin: 0;
+}
+
+.movesPanel {
+    display: flex;
+    flex-direction: row;
+}
+
+.movesPanelList {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 200px;
+}
+
+@media (max-width: 450px) {
+    .movesPanel {
+        flex-direction: column;
+    }
+    .movesPanelList {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.movesPanelList__Title {
+    text-align: center;
+    color: dodgerblue;
+    font-weight: 700;
+}
+
+.movesPanelList__List {
+    display: flex;
+    flex-direction: column;
+}
+
+.movesPanelList__move {
+    cursor: pointer;
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: white;
+}
+
+.selectedMove {
+    flex: 1;
+}
+
+.selectedMove__title {
+    color: dodgerblue;
+}
+
+.selectedMove__Move {
+    margin: 5px;
+    padding: 3px 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 100%;
+}
+
+.move {
+    min-height: 1px;
+    padding: 5px 15px;
+    width: 200px;
+}
+
+.move-title {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.Danger {
+    border-bottom: 3px solid red;
+}
+
+.Freak {
+    border-bottom: 3px solid mediumpurple;
+}
+
+.Savior {
+    border-bottom: 3px solid gold;
+}
+
+.Superior {
+    border-bottom: 3px solid blue;
+}
+
+.Mundane {
+    border-bottom: 3px solid darkgreen;
+}
+
+.conditions {
+    border-bottom: 3px solid black;
+}

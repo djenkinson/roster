@@ -1,0 +1,12 @@
+﻿@section Scripts{
+    @Scripts.Render("~/bundles/knockout")
+    @Scripts.Render("~/bundles/app")
+    @Scripts.Render("~/bundles/jquery")
+}
+@section Styles {
+@Styles.Render("~/Content/MoveStyleSheet.css")
+}
+
+@section SPAViews {
+    @Html.Partial("_Home")
+}

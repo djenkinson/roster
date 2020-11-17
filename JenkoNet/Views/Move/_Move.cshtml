@@ -1,0 +1,16 @@
+﻿<div class="move" data-bind="class: 'Label Title'">
+    <div class="move-title" data-bind="text: Name, click: toggle" style="font-weight:bold;cursor:pointer;"></div>
+    @*<div data-bind="text: jsonOut"></div>*@
+    <div data-bind="visible: expand">
+        <div data-bind="foreach: HtmlText">
+            <!-- ko if: Type() == 'text' -->
+            <p data-bind="html: Item"></p>
+            <!-- /ko -->
+            <!-- ko if: Type() == 'list' -->
+            <ul data-bind="foreach: Item">
+                <li data-bind="text: $data"></li>
+            </ul>
+            <!-- /ko -->
+        </div>
+    </div>
+</div>
